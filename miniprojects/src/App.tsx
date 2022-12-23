@@ -1,8 +1,13 @@
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import { EmailSubscribe } from './pages';
+
 function App() {
 	return (
-		<div>
-			<h1 className='text-center text-blue-400'>Hello word</h1>
-		</div>
+		<Router>
+			<Routes>
+				<Route path='/email-subscribe' element=<EmailSubscribe /> />
+			</Routes>
+		</Router>
 	);
 }
 
